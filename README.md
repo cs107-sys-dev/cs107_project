@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/cs107-sys-dev/cs107_project.svg?branch=master)](https://app.travis-ci.com/cs107-sys-dev/cs107_project)
+
 # A simple python project for CS107 (Lecture 8)
 
 Demonstration of PEP517 and PEP518 for package building and distribution.
