@@ -1,4 +1,5 @@
 [![Build Status](https://app.travis-ci.com/cs107-sys-dev/cs107_project.svg?branch=master)](https://app.travis-ci.com/cs107-sys-dev/cs107_project)
+[![codecov](https://codecov.io/gh/cs107-sys-dev/cs107_project/branch/master/graph/badge.svg?token=E00DHWLP24)](https://codecov.io/gh/cs107-sys-dev/cs107_project)
 
 # A simple python project for CS107 (Lecture 8)
 
