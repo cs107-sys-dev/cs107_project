@@ -15,8 +15,7 @@ install:
 
 # Run the tests and create coverage reports
 script:
-  - (cd tests && coverage run --source=.,../src -m unittest discover) # run tests
-  - (cd tests && coverage xml) # generate coverage
+  - (cd tests && ./run_coverage.sh) # run coverage tests
 
 # Upload the coverage report to codecov
 after_success:
