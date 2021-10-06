@@ -1,0 +1,7 @@
+/dist
+.coverage
+*.xml
+*.pyc
+*.egg-info
+**/__pycache__
+**/build
