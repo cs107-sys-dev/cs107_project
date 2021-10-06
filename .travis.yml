@@ -7,15 +7,16 @@ python:
 before_install:
   - python -m pip install coverage
 
-# This installs our project in the running container, convenient with PEP517 via
-# setuptools (Lecture 08)
+# This installs our project in the running container, convenient with PEP517 and
+# setuptools (Lecture 08).  We can do this local as well, without uploading to
+# PyPI
 install:
-  - (cd python_project && python -m pip install .)
+  - python -m pip install .
 
 # Run the tests and create coverage reports
 script:
-  - (cd python_project/tests && coverage run -m unittest discover) # run tests
-  - (cd python_project/tests && coverage xml) # generate coverage
+  - (cd tests && coverage run -m unittest discover) # run tests
+  - (cd tests && coverage xml) # generate coverage
 
 # Upload the coverage report to codecov
 after_success:

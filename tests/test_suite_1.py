@@ -1,10 +1,13 @@
 """
-This test suit runs tests for subpkg_1 of the cs107_package.  The test structure
-here is just an example, you are free to design your tests to your needs.
+This test suit (a module) runs tests for subpkg_1 of the cs107_package.  The
+test structure here is just an example, you are free to design your tests to
+your needs.
 """
 
+# python standard library
 import unittest
 
+# project code
 from cs107_package.subpkg_1 import (foo, bar)
 
 
