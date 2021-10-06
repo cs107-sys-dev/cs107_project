@@ -15,7 +15,7 @@ install:
 
 # Run the tests and create coverage reports
 script:
-  - (cd tests && coverage run -m unittest discover) # run tests
+  - (cd tests && echo $(pwd -P) && coverage run -m unittest discover) # run tests
   - (cd tests && coverage xml) # generate coverage
 
 # Upload the coverage report to codecov
