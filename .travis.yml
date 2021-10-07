@@ -9,9 +9,9 @@ before_install:
 
 # This installs our project in the running container, convenient with PEP517 and
 # setuptools (Lecture 08).  We can do this local as well, without uploading to
-# PyPI
+# PyPI first
 install:
-  - python -m pip install .
+  - (python -m build --wheel && python -m pip install dist/*)
 
 # Run the tests and create coverage reports
 script:
