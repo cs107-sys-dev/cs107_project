@@ -5,7 +5,7 @@ python:
 
 # These packages we only want in our CI builds
 before_install:
-  - python -m pip install coverage
+  - python -m pip install build coverage
 
 # This installs our project in the running container, convenient with PEP517 and
 # setuptools (Lecture 08).  We can do this local as well, without uploading to
