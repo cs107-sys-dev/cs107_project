@@ -14,13 +14,13 @@ tests=(
 
 # decide what driver to use (depending on arguments given)
 unit='-m unittest'
-driver="python ${unit}"
-for arg; do
-    case ${arg} in
-        coverage) driver="${@} ${unit}"; break;;
-        pytest*) driver="${@}"; break;;
-    esac
-done
+if [[ $# -gt 0 && ${1} == 'coverage' ]]; then
+    driver="${@} ${unit}"
+elif [[ $# -gt 0 && ${1} == 'pytest' ]]; then
+    driver="${@}"
+else
+    driver="python ${@} ${unit}"
+fi
 
 # we must add the module source path because we use `import cs107_package` in
 # our test suite and we want to test from the source directly (not a package
