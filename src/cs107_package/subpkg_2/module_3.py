@@ -11,17 +11,22 @@ def baz(x):
     """
     Return the input x if it is an int or float.
 
-    Arguments:
+    Parameters
+    ----------
     x : input argument
 
-    Returns:
-    x if it is of type int or float
+    Returns
+    -------
+    x : If it is of type int or float
 
-    Examples:
+    Examples
+    --------
     >>> baz(0)
     0
+
     >>> baz(0.0)
     0.0
+
     >>> baz('a string')
     Traceback (most recent call last):
         ...
