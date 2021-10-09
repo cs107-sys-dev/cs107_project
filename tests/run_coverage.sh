@@ -5,19 +5,19 @@
 set -e
 
 tool='coverage'
-if [[ $# -eq 1 ]]; then
+if [[ $# -gt 0 ]]; then
     tool="${1}"; shift
 fi
 
 if [[ ${tool} == 'coverage' ]]; then
     # run the tests (generates coverage data to build report)
-    ./run_tests.sh coverage run --source=.,cs107_package "${@}"
+    ./run_tests.sh coverage run --source=cs107_package "${@}"
 
-    # build the coverage report in xml format
-    coverage xml
+    # build the coverage report on stdout
+    coverage report -m
 elif [[ ${tool} == 'pytest' ]]; then
     # generate coverage reports with pytest in one go
-    ./run_tests.sh pytest --cov=cs107_package --cov-report=xml "${@}"
+    ./run_tests.sh pytest --cov=cs107_package "${@}"
 else
     >&2 echo "Error: unknown tool '${tool}'"
     exit 1

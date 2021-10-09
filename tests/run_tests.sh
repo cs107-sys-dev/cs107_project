@@ -8,6 +8,7 @@ set -e
 tests=(
     # test_other_things_on_root_level.py
     subpkg_1/test_module_1.py
+    subpkg_1/test_module_2.py
     # subpkg_2/test_module_3.py
     # subpkg_2/test_module_4.py
 )

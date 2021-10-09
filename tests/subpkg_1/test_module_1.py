@@ -1,6 +1,6 @@
 """
 This test suite (a module) runs tests for subpkg_1.module_1 of the
-cs107_package.  
+cs107_package.
 """
 
 # python standard library
