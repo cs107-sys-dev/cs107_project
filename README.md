@@ -1,4 +1,4 @@
-[![main action](https://github.com/cs107-sys-dev/cs107_project/actions/workflows/main.yml)](https://github.com/cs107-sys-dev/cs107_project/actions/workflows/main.yml/badge.svg)
+![main action](https://github.com/cs107-sys-dev/cs107_project/actions/workflows/main.yml/badge.svg)
 [![codecov](https://codecov.io/gh/cs107-sys-dev/cs107_project/branch/master/graph/badge.svg?token=E00DHWLP24)](https://codecov.io/gh/cs107-sys-dev/cs107_project)
 [![Documentation Status](https://readthedocs.org/projects/cs107-project/badge/?version=latest)](https://cs107-project.readthedocs.io/en/latest/?badge=latest)
 
